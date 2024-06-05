@@ -6,6 +6,8 @@ const empRouter = require('./routes/empRoute')
 
 const MongoRoute = require('./routes/mongodbRoleRoute')
 
+const mongoEmpRoute = require('./routes/mongoEmpRoute') 
+
 const swaggerUi = require("swagger-ui-express");
 const swaggerDocument = require("./swagger-output.json");
 
@@ -44,6 +46,9 @@ app.use('/api' , roleRouter );
 app.use('/api/v1' , empRouter)
 
 app.use('/api/db' , MongoRoute)
+
+app.use('/api/emp' ,mongoEmpRoute )
+
 
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
