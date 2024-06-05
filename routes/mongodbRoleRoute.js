@@ -8,7 +8,7 @@ const {
   GetMongoRoleById,
   DeleteMongoRoleById,
   updateMongoRoleById,
-} = require("../controllers/mongoEmpController");
+} = require("../controllers/mongoRoleController");
 
 router.post("/mongoRole", createMongoRole);
 
