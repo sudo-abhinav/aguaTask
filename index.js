@@ -4,7 +4,7 @@ const app = express();
 const roleRouter = require('./routes/roleRoute')
 const empRouter = require('./routes/empRoute')
 
-const MongoRoute = require('./routes/mongodbEmpRoute')
+const MongoRoute = require('./routes/mongodbRoleRoute')
 
 const swaggerUi = require("swagger-ui-express");
 const swaggerDocument = require("./swagger-output.json");
