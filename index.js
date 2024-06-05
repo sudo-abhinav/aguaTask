@@ -47,7 +47,7 @@ app.use('/api/v1' , empRouter)
 
 app.use('/api/db' , MongoRoute)
 
-app.use('/api/emp' ,mongoEmpRoute )
+app.use('/api/emp' ,mongoEmpRoute)
 
 
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
